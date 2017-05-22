@@ -18,7 +18,14 @@ public class SuperMnozenie {
      * @return 
      */
     public static String mul(String a, String b){
-        return "1";
+        int aInt = Integer.parseInt(a);
+        int bInt = Integer.parseInt(b);  
+        
+        int value = aInt*bInt;
+        
+        return Integer.toString(value);
+        
+        
     }
     
 }
