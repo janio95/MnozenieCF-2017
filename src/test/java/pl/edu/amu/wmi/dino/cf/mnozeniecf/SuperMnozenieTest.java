@@ -46,5 +46,24 @@ public class SuperMnozenieTest {
     public void testMul3() {
         assertEquals("-1", SuperMnozenie.mul("1", "-1"));
     }
-
+    
+     /**
+     * Maciej Wanat
+     */
+    
+    @Test
+    public void testMul4() {       
+        assertEquals("1000000000000", SuperMnozenie.mul("1000000", "1000000"));      
+    }
+    
+    @Test
+    public void testMul5() {       
+        assertEquals("1.5", SuperMnozenie.mul("1.5", "1"));      
+    }
+    
+    @Test 
+    public void testMul6() {       
+        assertEquals("-1.5", SuperMnozenie.mul("-1.5", "1"));      
+    }
+    
 }
