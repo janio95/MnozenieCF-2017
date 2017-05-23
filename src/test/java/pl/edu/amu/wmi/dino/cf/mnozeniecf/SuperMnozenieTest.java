@@ -15,6 +15,7 @@ import static org.junit.Assert.*;
  */
 public class SuperMnozenieTest {
 
+    
     public SuperMnozenieTest() {
     }
 
@@ -84,6 +85,29 @@ public class SuperMnozenieTest {
     @Test 
     public void testMul9() {       
         assertEquals("0", SuperMnozenie.mul("-1.5", "0"));      
+    }
+    
+     /**
+     * Dymitr Sołtysiak
+     */
+    
+    @Test
+    public void testMul10()
+    {
+        assertEquals("1", SuperMnozenie.mul("" + Math.pow(2,0), "1"));
+    }
+    
+    @Test
+    public void testMul11()
+    {
+        
+        assertEquals("2.718281828459045", SuperMnozenie.mul(""+ Math.E,"1"));
+    }
+    
+    @Test
+    public void testMul12()
+    {
+        assertEquals("-1.25", SuperMnozenie.mul("-0.625000","1"));
     }
     
 }

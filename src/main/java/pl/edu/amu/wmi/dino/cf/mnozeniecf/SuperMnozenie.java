@@ -10,6 +10,10 @@ package pl.edu.amu.wmi.dino.cf.mnozeniecf;
  * @author bikol
  */
 public class SuperMnozenie {
+    
+   
+    
+    
     /**
      * Wylicza iloczyn dwóch liczb (dowolnych).
      * 
@@ -22,7 +26,26 @@ public class SuperMnozenie {
         String aa = a;
         String bb = b;
         
-        if (aa.contains(".") || bb.contains("."))
+        
+        
+        if (aa == "0" || bb == "0")
+        {
+            int value = 0;
+            return Integer.toString(value);
+        }
+        else if (aa == "0.0" || bb == "0.0")
+        {
+           int value = 0;
+           return Integer.toString(value);
+        }
+        else if (aa.contains("0.") || bb.contains("0."))
+        {
+            double aL = Double.parseDouble(a);
+            double bL = Double.parseDouble(b);
+            double value = aL * bL;
+            return Double.toString(value);
+                }
+        else if (aa.contains(".") || bb.contains("."))
         {
             
             float aFloat = Float.parseFloat(a);
