@@ -18,12 +18,30 @@ public class SuperMnozenie {
      * @return 
      */
     public static String mul(String a, String b){
-        int aInt = Integer.parseInt(a);
-        int bInt = Integer.parseInt(b);  
         
-        int value = aInt*bInt;
+        String aa = a;
+        String bb = b;
         
-        return Integer.toString(value);
+        if (aa.contains(".") || bb.contains("."))
+        {
+            
+            float aFloat = Float.parseFloat(a);
+            float bFloat = Float.parseFloat(b);
+            float value = aFloat*bFloat;
+            
+            return Float.toString(value);
+        }
+        
+        else 
+        {
+        long aLong = Long.parseLong(a);
+        long bLong = Long.parseLong(b);  
+        
+        long value = aLong*bLong;
+        return Long.toString(value);
+        }
+        
+        
         
         
     }

@@ -66,4 +66,24 @@ public class SuperMnozenieTest {
         assertEquals("-1.5", SuperMnozenie.mul("-1.5", "1"));      
     }
     
+    
+    /**
+     * Adrian Witczak
+     */
+    
+    @Test
+    public void testMul7() {       
+        assertEquals("0.222332666778", SuperMnozenie.mul("0.333666", "0.666333"));      
+    }
+    
+    @Test
+    public void testMul8() {       
+        assertEquals("0", SuperMnozenie.mul("0.0", "100000000000"));      
+    }
+    
+    @Test 
+    public void testMul9() {       
+        assertEquals("0", SuperMnozenie.mul("-1.5", "0"));      
+    }
+    
 }
