@@ -112,7 +112,6 @@ public class SuperMnozenieTest {
     
     /*
     Mikołaj Stasiak
-    */
      @Test
     public void testMS1()
     {
@@ -127,5 +126,6 @@ public class SuperMnozenieTest {
     public void testMS3()
     {
         assertEquals("0.02718281828459045", SuperMnozenie.mul("0.01",""+Math.E));
-    }*/
+    }
+    */
 }
